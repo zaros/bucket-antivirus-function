@@ -10,10 +10,7 @@ RUN yum install -y cpio yum-utils zip
 
 # Download libraries we need to run in lambda
 WORKDIR /tmp
-<<<<<<< HEAD
-RUN yumdownloader -x \*i686 --archlist=x86_64
 
-=======
 RUN yumdownloader -x \*i686 --archlist=x86_64 \
   clamav \
   clamav-lib \
